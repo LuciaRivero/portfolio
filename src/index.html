@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./output.css" rel="stylesheet" />
   </head>
-  <body class="text-indigo-50">
-    <header id="header" class="bg-indigo-950">
+  <body class="text-indigo-50 bg-stone-950">
+    <header id="header" class="bg-indigo-950 sticky top-0">
       <nav
-        class="h-16 flex justify-between items-center shadow-sm sticky top-0 sm:px-24"
+        class="mx-auto flex h-16 items-center justify-between shadow-sm sm:max-w-screen-sm sm:px-0 lg:max-w-screen-lg"
       >
         <button id="menu-button" class="absolute left-2 sm:hidden">
           <svg
@@ -36,6 +36,7 @@
           </svg>
         </button>
         <h1
+          id="main-title"
           class="mx-auto bg-gradient-to-r from-[#FF834C] to-[#852EE1] bg-clip-text text-transparent text-2xl font-black sm:mx-0"
         >
           &lt; Lucia Rivero /&gt;
@@ -53,8 +54,8 @@
           <li>
             <a href="#experience">Experiencia</a>
           </li>
-          <li>
-            <button class="sm:hidden">
+          <li class="sm:hidden">
+            <button>
               <svg
                 width="50px"
                 height="50px"
@@ -80,6 +81,49 @@
         </ul>
       </nav>
     </header>
+    <section>
+      <article
+        class="mx-auto flex max-w-72 flex-wrap items-center justify-between py-16 sm:max-w-screen-sm lg:max-w-screen-lg"
+      >
+        <img
+          class="mx-auto max-w-72 rounded-full"
+          src="https://avatars.githubusercontent.com/u/16962135?v=4"
+        />
+        <div class="my-4 flex flex-col gap-10">
+          <h2
+            class="mx-auto bg-gradient-to-r from-[#FF834C] to-[#852EE1] bg-clip-text text-transparent text-6xl font-black text-center sm:text-left"
+          >
+            ¡Hola!
+          </h2>
+          <p class="lg:max-w-2xl">
+            soy Lucía Rivero, desarrolladora de software con experiencia tanto
+            en backend como frontend. Empecé en el mundo tech como QA manual, lo
+            que me dio una buena base para entender los flujos de usuario y la
+            importancia del testing. Después de eso, me enfoqué en frontend con
+            React y más adelante me sumé experiencia como React Native
+            Developer, recientemente estuve trabajando como backend developer
+            donde desarrollé e integré APIs RESTful usando Node.js, AWS
+            serverless y enfoques de clean code. Me interesa seguir creciendo
+            distintas areas del mundo IT, Soy muy comprometida con la calidad
+            del código y el trabajo en equipo, y disfruto mucho aprender
+            tecnologías nuevas y adaptarme a distintos desafíos."
+          </p>
+          <ul class="flex gap-10">
+            <li>
+              <a href="#" target="_blank">
+                <img src="./assets/linkdin.svg" />
+              </a>
+            </li>
+
+            <li>
+              <a href="#" target="_blank">
+                <img src="./assets/github.svg" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </article>
+    </section>
     <script src="./scripts/navigation.js"></script>
   </body>
 </html>
